@@ -371,6 +371,11 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void BtnTextBinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTextBinActionPerformed
         String texto = origen.getText();
+ 
+         Destino destino1 = new Destino();
+                 destino1.setVisible(true);
+        
+        
         //String texto = "";
         //char[] letra;
         //  char [] letra = texto.toCharArray();
