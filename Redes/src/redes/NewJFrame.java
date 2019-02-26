@@ -5,6 +5,7 @@
  */
 package redes;
 
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -38,7 +39,6 @@ public class NewJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -58,13 +58,6 @@ public class NewJFrame extends javax.swing.JFrame {
         BtnTextBin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jButton1.setText("enviar datos");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
 
         jLabel1.setText("jLabel1");
 
@@ -111,49 +104,43 @@ public class NewJFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(215, 215, 215)
-                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8))
-                .addGap(72, 72, 72))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(215, 215, 215)
+                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel8))
+                        .addGap(72, 72, 72))
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(BtnTextBin)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(132, Short.MAX_VALUE))
+                        .addComponent(BtnTextBin)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(132, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel9)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(5, 5, 5)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jLabel2))
+                .addGap(10, 10, 10)
+                .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -170,9 +157,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel9)
-                        .addGap(94, 94, 94))
+                        .addGap(94, 304, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel11)
@@ -187,194 +172,18 @@ public class NewJFrame extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(4, 4, 4)
                                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(84, Short.MAX_VALUE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel9)
+                        .addGap(22, 22, 22))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
-
-
-        int[] unidad_datos;
-        int[] dividendo;
-        int[] largo_p;
-        int[] resto;
-        int[] crc;
-        int cantdatos, divisor, largo;
-       // String lom = origen.getText();
-        String lom=JOptionPane.showInputDialog("Ingrese la unidad de datos");
-        char [] values;
-        values = lom.toCharArray();
-        cantdatos=values.length;
-        unidad_datos=new int[cantdatos];
-
-        for(int i=0; i<cantdatos; i++){            
-            String auh=Character.toString(values[i]);
-            int aux = Integer.parseInt(auh);
-            unidad_datos[i]=aux;
-        }
-         // String rami = origen.getText();
-        String rami=JOptionPane.showInputDialog("Ingrese el polinomio divisor");
-        
-        char [] ui;
-        ui=rami.toCharArray();
-        divisor=ui.length;
-        largo_p=new int[divisor];
-       
-        
-        for(int i=0; i<divisor; i++){
-            String chap = Character.toString(ui[i]);
-            int aux = Integer.parseInt(chap);
-            largo_p[i]=aux;
-        }
-        
-        
-        String jkl="";
-        for (int i=largo_p.length-1;i>=0;i--){
-           for(int j =0;j<largo_p.length;j++){
-            if(largo_p[i]==1){
-                jkl=jkl+" + x^"+j;
-            }
-        }
-        }
-          jLabel1.setText(" "+jkl);
-       System.out.println(jkl);
-       
-       largo=cantdatos+divisor-1;
-        
-        dividendo=new int[largo];
-        resto=new int[largo];
-        crc=new int[largo];
-  
-   
-        for(int i=0;i<unidad_datos.length;i++){
-            dividendo[i]=unidad_datos[i];
-            
-        }
-                  jLabel2.setText("Diviviendo"+lom);
-       System.out.println("Dividendo: "+lom);
-        
-          jLabel3.setText("Divisor "+rami);
-        System.out.println("Divisor: "+rami);
-        
-  jLabel4.setText(" Dividiendo despues de agregar o's es : ");
-        System.out.print("Dividendo (despues de agregar lo 0's) es : ");
-        String dividendofinal="";
-        for(int i=0; i< dividendo.length; i++)
-        {
-            
-           jLabel5.setText(""+dividendo[i]);//.toString(dividendo[i]);
-          //jLabel5.setText("");
-            dividendofinal=dividendofinal+dividendo[i];
-          System.out.print(dividendo[i]);   
-       
-       //  jLabel5.setText(""+dividendo[i]);
-       System.out.println();
-        }
-        jLabel5.setText(dividendofinal);
-        
-        
-        for(int j=0; j<dividendo.length; j++){
-              resto[j] = dividendo[j];
-        }
-    
-      resto=divide(dividendo, largo_p, resto);
-   
-        
-        for(int i=0;i<dividendo.length;i++)           
-        {
-            crc[i]=(dividendo[i]^resto[i]);
-        }
-        
-        System.out.println();
-          jLabel6.setText("");  
-        jLabel6.setText(" el dividendo al agregar el crc quedaria como: ");
-       System.out.println("El dividendo al agregarle el CRC quedaria como : "); 
-       
-       String crcfinal="";
-        for(int i=0;i<crc.length;i++)
-        {
-            
-         jLabel7.setText(" "+crc[i]);
-         crcfinal=crcfinal+crc[i];
-       //   jLabel7.setText(""); 
-        //System.out.print(crc[i]);
-        }
-        jLabel7.setText(crcfinal);
-        
-     System.out.println();
-         //j1TextArea1
-           // String bitna = jTextArea1.getText()+largo;       
-        String bitna=JOptionPane.showInputDialog("Ingresa el codigo de CRC de  "+largo+" bits para comprobar: ");
-        char [] nm;
-        nm = bitna.toCharArray();
-        
-        for(int i=0; i<crc.length; i++){
-            //String bitna;
-              String chap = Character.toString(nm[i]);
-            int aux = Integer.parseInt(chap);
-            crc[i]=aux;
-        }
-          jLabel8.setText(" el dividendo recivido es : "+bitna);
-        System.out.println("el dividendo recibido es: "+bitna);       
-       
-       resto=divide(crc, largo_p, resto);
-        
-        for(int i=0; i< resto.length; i++)
-        {
-            if(resto[i]!=0)
-            {
-                  jLabel10.setText(" error su resto no es  cero ");
-                System.out.println("Error su resto no es cero");
-                break;
-            }
-            if(i==resto.length-1)
-            {
-                  jLabel10.setText(" no hay error su resto es igual a 0 ");
-                
-                   System.out.println("No hay error su resto es igual  a 0");
-            }
-            
-        }
-        
-    }
-        
-    
-
-
-        // TODO add your handling code here:
-        
-        
-        
-        
-       static int[] divide(int dividendo[],int largo_p[], int resto[])
-     {
-        int contador=0;
-        while(true)
-        {
-            for(int i=0;i<largo_p.length;i++)
-                resto[contador+i]=(resto[contador+i]^largo_p[i]);
-            
-            while(resto[contador]==0 && contador!=resto.length-1)
-                contador++;
-    
-            if((resto.length-contador)<largo_p.length)
-                break;
-        }
-       
-        return resto;
-     
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void BtnTextBinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTextBinActionPerformed
         String texto = origen.getText();
  
-         Destino destino1 = new Destino();
-                 destino1.setVisible(true);
-        
+       
         
         //String texto = "";
         //char[] letra;
@@ -384,42 +193,24 @@ public class NewJFrame extends javax.swing.JFrame {
         // char letra;
         int contadorerror =0;
         int tam = texto.length();
-        if (tam==22){
+        
 
             String R= null;
             String e= null;
             String d= null;
             String s= null;
-            //if (texto.equals("Redes "))  {
+            if (texto.equals("Redes "))  {
 
-                char ERRORES[] = new char[22];
-                char palabrafrase[] = new char[22];
-                palabrafrase[0]='R';
-                palabrafrase[1]='e';
-                palabrafrase[2]='d';
-                palabrafrase[3]='e';
-                palabrafrase[4]='s';
-                palabrafrase[5]=' ';
-                palabrafrase[6]='d';
-                palabrafrase[7]='e';
-                palabrafrase[8]=' ';
-                palabrafrase[9]='C';
-                palabrafrase[10]='o';
-                palabrafrase[11]='m';
-                palabrafrase[12]='p';
-                palabrafrase[13]='u';
-                palabrafrase[14]='t';
-                palabrafrase[15]='a';
-                palabrafrase[16]='d';
-                palabrafrase[17]='o';
-                palabrafrase[18]='r';
-                palabrafrase[19]='a';
-                palabrafrase[20]='s';
-                palabrafrase[21]=' ';
-
+                char ERRORES[] = new char[80];
+                char palabrafrase[] = new char[80];
+                ArrayList<String> cadenabinario = new ArrayList<String>();
+                
+          
+                cadenabinario.add("00110001011011100011000101100011");
                 for (int i = 0; i < texto.length(); i++)
 
                 {
+                      
                     //recorre el texto ingresado
                     char letra = texto.charAt(i);//separa letra a letra
 
@@ -429,9 +220,13 @@ public class NewJFrame extends javax.swing.JFrame {
                     }
                     else
                     {
+                        
                         ERRORES[i]='1';
                         contadorerror++;
+                        
+                        
                     }
+                    
                     int aux = Binario((int) (letra)).length();//almacena largo del binario de la letra devuelta
                     for (int j = 0; j < 8; j++) {//recorrido de 8 characteres
                         if (aux < 8) {//si el largo del binario es menor a 7 (0-7)entonces
@@ -439,22 +234,115 @@ public class NewJFrame extends javax.swing.JFrame {
                             codigoBinario = codigoBinario + "0";//agregar 0 a la concadenacion
                             aux++;
                             //System.out.println("la posiscion s " +j );
-
+                            
                         }
+                        
 
                     }
-
-                    codigoBinario = codigoBinario + Binario ((int) (letra))+" = "+ letra +" " + " ; "  ;
+                    cadenabinario.add("0"+ Binario((int) (letra)));
+                    codigoBinario = codigoBinario + Binario ((int) (letra))+" = "+ letra +" " + " - "  ;
                     if(contadorerror==0)
+                        
                     {
+                        
+                        
+                        
+  
+                        
                         jLabel9.setText("la frase es correcta ");
+                        
+                        
+                        
+                        
+                        
+                
                     }
+                    
+              
+                
+                            
+                    
+                       
+               
+                    
                     if(contadorerror>=1)
                     {
                         jLabel9.setText("la frase es incorrecta ");
                     }
                     //codigoBinario = codigoBinario + "g" ;
                 }
+              
+                   cadenabinario.add("01000110001100010110111001100001");
+                
+                
+                
+                
+        int n;
+		
+		ArrayList<String> arreglo = new ArrayList<String>();
+                arreglo.add("1010010");
+                arreglo.add("1100101");
+                arreglo.add("1100100");
+                arreglo.add("1100101");
+                arreglo.add("1110011");
+                arreglo.add("0100000");
+                for(int j=0; j<arreglo.size(); j++)
+                {
+               int  ta = arreglo.get(j).length();
+                int datas[] = new int[ta];
+                char[] cadena = arreglo.get(j).toCharArray();
+                int contador=0;
+                for(char cad:cadena)
+                {
+                    datas[contador]=Character.getNumericValue(cad);
+                    contador++;
+                }
+                
+                
+                  int divi[]=new int [5];
+                divi[0]=1;
+                 divi[1]=0;
+                  divi[2]=1;
+                   divi[3]=0;
+                    divi[4]=1;
+                    
+                    
+                   
+                
+                
+                
+        // Divide the inputted data by the inputted divisor
+		// Store the remainder that is returned by the method
+		int remainder[] = divide(datas, divi);
+		for(int i=0 ; i < remainder.length-1 ; i++) {
+			System.out.print(remainder[i]);
+		}
+		System.out.println("\nThe CRC code generated is:");
+                //jLabel4.setText("el crc generado es  ");
+		String crc2="";
+		for(int i=0 ; i < datas.length ; i++) {
+			System.out.print(datas[i]);
+                        crc2= crc2+datas[i];
+                         // jLabel5.setText(" "+crc2);
+                        
+		}
+                String crc3="";
+		for(int i=0 ; i < remainder.length-1 ; i++) {
+                    crc3=crc3+remainder[i];
+			System.out.print(remainder[i]);
+                         // jLabel6.setText(" "+crc3);
+                        // jLabel4.setText("Error en la posicion "+" "+x+" "+"La letra deveria ser "+" "+palabrafrase[x]);
+		}
+		System.out.println();
+                int contador1=0;
+                    jLabel3.setText("el crc generado es  "+crc2+crc3 );
+                  jLabel4.setText("el crc generado es  "+crc2+crc3 );
+                }
+                
+                
+                
+                
+                
                 String conca="";
                 String fori="";
                 for (int x =0; x<texto.length(); x++)
@@ -471,10 +359,20 @@ public class NewJFrame extends javax.swing.JFrame {
                     //jLabel4.setText(conca);
 
                 }
-
-                //}    FIN DE IF COMPROBACION
-        }    //FIN DE IF DE TAM==&
-        else if(tam <=20)
+                
+                   destino.setText(codigoBinario);/*imprime el codigo binario completo*/
+        destino.append("\n Cadena completa: ");
+        for(int x=0; x<cadenabinario.size();x++)
+                {
+                    destino.append("\n"+cadenabinario.get(x));
+                }
+            }
+            
+            
+            
+                //}  //  FIN DE IF COMPROBACION
+            //FIN DE IF DE TAM==&
+        if(tam <=5)
         {
 
             for (int i = 0; i < texto.length(); i++)
@@ -505,7 +403,7 @@ public class NewJFrame extends javax.swing.JFrame {
             jLabel9.setText("Error la frase es muy corta");
         }
 
-        else if(tam >=22)
+        else if(tam >=7)
         {
 
             for (int i = 0; i < texto.length(); i++)
@@ -536,10 +434,89 @@ public class NewJFrame extends javax.swing.JFrame {
             jLabel9.setText(" error la frase es muy larga ");
         }
 
-        destino.setText(codigoBinario);/*imprime el codigo binario completo*/
-
+     
+        
     }//GEN-LAST:event_BtnTextBinActionPerformed
-
+    
+    
+    
+    
+    
+       static int[] divide(int old_data[], int divisor[]) {
+		int remainder[] , i;
+		int data[] = new int[old_data.length + divisor.length];
+		System.arraycopy(old_data, 0, data, 0, old_data.length);
+		// Remainder array stores the remainder
+		remainder = new int[divisor.length];
+		// Initially, remainder's bits will be set to the data bits
+		System.arraycopy(data, 0, remainder, 0, divisor.length);
+		
+		// Loop runs for same number of times as number of bits of data
+		// This loop will continuously exor the bits of the remainder and
+		// divisor
+		for(i=0 ; i < old_data.length ; i++) {
+			System.out.println((i+1) + ".) First data bit is : "
+								+ remainder[0]);
+			System.out.print("Remainder : ");
+			if(remainder[0] == 1) {
+				// We have to exor the remainder bits with divisor bits
+				for(int j=1 ; j < divisor.length ; j++) {
+					remainder[j-1] = exor(remainder[j], divisor[j]);
+					System.out.print(remainder[j-1]);
+				}
+			}
+			else {
+				// We have to exor the remainder bits with 0
+				for(int j=1 ; j < divisor.length ; j++) {
+					remainder[j-1] = exor(remainder[j], 0);
+					System.out.print(remainder[j-1]);
+				}
+			}
+			// The last bit of the remainder will be taken from the data
+			// This is the 'carry' taken from the dividend after every step
+			// of division
+			remainder[divisor.length-1] = data[i+divisor.length];
+			System.out.println(remainder[divisor.length-1]);
+		}
+		return remainder;
+	}
+	
+	static int exor(int a, int b) {
+		// This simple function returns the exor of two bits
+		if(a == b) {
+			return 0;
+		}
+		return 1;
+	}
+    
+    
+    
+    
+      static int[] divide(int dividendo[],int largo_p[], int resto[])
+     {
+        int contador=0;
+        while(true)
+        {
+            for(int i=0;i<largo_p.length;i++)
+                resto[contador+i]=(resto[contador+i]^largo_p[i]);
+            
+            while(resto[contador]==0 && contador!=resto.length-1)
+                contador++;
+    
+            if((resto.length-contador)<largo_p.length)
+                break;
+        }
+       
+        return resto;
+     
+        
+    }
+    
+    
+    
+    
+    
+    
        private String Binario(int Decimal) {
         int R, x = 0;//variables que se implementaran
         String Binario = ""; //guarda el contenido en codigo binario
@@ -602,7 +579,6 @@ public class NewJFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnTextBin;
     private javax.swing.JTextArea destino;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
