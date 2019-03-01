@@ -68,12 +68,6 @@ public class NewJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel3.setText("jLabel3");
-
-        jLabel4.setText("jLabel4");
-
-        jLabel9.setText("jLabel9");
-
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("Ingrese Texto");
 
@@ -123,14 +117,6 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jLabel1.setText("jLabel1");
 
-        jLabel2.setText("jLabel2");
-
-        jLabel5.setText("jLabel5");
-
-        jLabel6.setText("jLabel6");
-
-        jLabel7.setText("jLabel7");
-
         jButton3.setText("Cambiar palabra");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,86 +129,89 @@ public class NewJFrame extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BtnTextBin)
-                    .addComponent(jButton3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 487, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(173, 173, 173))
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1)
+                    .addComponent(jLabel1)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jLabel14)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(BtnTextBin)
+                                .addComponent(jButton3)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(jLabel13)
-                        .addGap(122, 122, 122)
-                        .addComponent(jLabel14)
-                        .addGap(78, 902, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel13))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel9))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(470, 470, 470)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 487, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 329, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(482, 482, 482)
+                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton2)
+                        .addGap(91, 91, 91)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(365, 365, 365))
-                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(12, 12, 12)
-                                .addComponent(jLabel9))
-                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1))
-                        .addGap(0, 0, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel7))
-                .addGap(473, 473, 473))
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel7))
+                        .addGap(473, 473, 473))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel13)
-                                .addGap(18, 18, 18)
-                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel14)
-                                .addGap(24, 24, 24)
-                                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(6, 6, 6)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(58, 58, 58)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel14)
+                            .addComponent(jLabel13))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(24, 24, 24)
                         .addComponent(jLabel9)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton2))
+                        .addGap(33, 33, 33)
                         .addComponent(jButton1)
-                        .addGap(32, 32, 32)
-                        .addComponent(jLabel11)
                         .addGap(18, 18, 18)
+                        .addComponent(jLabel11)
+                        .addGap(13, 13, 13)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(BtnTextBin, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(10, 10, 10)
-                        .addComponent(jButton3)
-                        .addGap(0, 264, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton3))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGap(22, 22, 22)
                         .addComponent(jLabel2)
                         .addGap(18, 18, 18)
@@ -234,13 +223,13 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addGap(5, 5, 5)
                         .addComponent(jLabel3)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel4)
-                        .addGap(35, 35, 35)
-                        .addComponent(jLabel12)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2)))
-                .addGap(7, 7, 7)
+                        .addComponent(jLabel4)))
+                .addGap(7, 279, Short.MAX_VALUE)
                 .addComponent(jLabel1))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(282, 282, 282)
+                .addComponent(jScrollPane2)
+                .addContainerGap())
         );
 
         pack();
@@ -249,7 +238,8 @@ public class NewJFrame extends javax.swing.JFrame {
     private void BtnTextBinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTextBinActionPerformed
         String texto = origen.getText();
  
-       
+        // String texto = origen.getText();
+     destino.setText("");
         
         //String texto = "";
         //char[] letra;
@@ -567,8 +557,8 @@ public class NewJFrame extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
      String texto = origen.getText();
-     destino.setText(" ");
-       
+     jTextArea2.setText(" ");
+        destino.setText("");
         Boolean error = false;
         //String texto = "";
         //char[] letra;
@@ -593,7 +583,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 ArrayList<String> cadenabinario = new ArrayList<String>();
                 ArrayList<String> arreglo = new ArrayList<String>();
                 
-                   arreglo.add("00110001011011100011000101100011");
+                   arreglo.add("00110001011011100011000101100011");//protocolo inicio
             for (char sali : palabrafrase)
             {
                 if(String.valueOf(Integer.toBinaryString(sali)).length() == 7)
@@ -605,8 +595,9 @@ public class NewJFrame extends javax.swing.JFrame {
                 arreglo.add("00"+Integer.toBinaryString(sali));
                 }
             }
-            arreglo.add("01000110001100010110111001100001");
+            arreglo.add("01000110001100010110111001100001");//protocolo fin
                 
+             jLabel2.setText("Frase correcta");
                 
             destino.append("Frase en binario \n");
             cadenabinario.add("00110001011011100011000101100011");
@@ -637,7 +628,7 @@ public class NewJFrame extends javax.swing.JFrame {
                             int charcode = Integer.parseInt(arreglo.get(i),2);
                             String str = new Character((char)charcode).toString();
                             destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n");
-                            
+                               jLabel2.setText("Error en la posicion"+i+"El caracter deve ser "+str+"");
                             
                         }
                     }
@@ -654,14 +645,17 @@ public class NewJFrame extends javax.swing.JFrame {
                             contaerror++;
                             int charcode = Integer.parseInt(arreglo.get(i),2);
                             String str = new Character((char)charcode).toString();
-                            destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n");                                                        
+                            destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n");  
+                               jLabel2.setText("Error en la posicion "+i+"el caracter deve ser "+str+"\n");
                         }                                                
                     }
                     if(contaerror<1)
                     {
                         destino.append("FRASE CORRECTA, PERO MUY CORTA \n");
+                           jLabel2.setText("FRASE CORRECTA, PERO MUY CORTA \n");
                     }
                     destino.append("LE FALTARON "+(arreglo.size()-cadenabinario.size())+" CARACTERES \n");
+                     jLabel5.setText("Le faltaron "+(arreglo.size()-cadenabinario.size())+" caracteres \n");
                 }
                 
                 else if(cadenabinario.size()>arreglo.size())
@@ -676,14 +670,17 @@ public class NewJFrame extends javax.swing.JFrame {
                             contaerror++;
                             int charcode = Integer.parseInt(arreglo.get(i),2);
                             String str = new Character((char)charcode).toString();
-                            destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n");                                                        
+                            destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n");  
+                             jLabel2.setText("Error en la posicion"+i+" el caracter deve ser "+str+" \n");
                         }                                                
                     }
                     if(contaerror<1)
                     {
                         destino.append("FRASE CORRECTA, PERO MUY LARGA \n");
+                         jLabel2.setText("Frase correcta pero muy larga \n");
                     }
                     destino.append("TIENE "+(cadenabinario.size()-arreglo.size())+" CARACTERES ADICIONALES \n");
+                     jLabel5.setText("Tiene "+(cadenabinario.size()-arreglo.size())+" caracteres adicionales \n");
                 }
                 
                 if(error == false)
@@ -743,8 +740,8 @@ public class NewJFrame extends javax.swing.JFrame {
 		}
 		System.out.println();
                 int contador1=0;
-                    jLabel3.setText("el crc generado es  "+crc2+crc3 );
-                  jLabel4.setText("el crc generado es  "+crc2+crc3 );
+                   // jLabel3.setText("el crc generado es  "+crc2+crc3 );
+                //  jLabel4.setText("el crc generado es  "+crc2+crc3 );
                 }
                 
   
@@ -778,8 +775,8 @@ public class NewJFrame extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
      String texto = origen.getText();
-     destino.setText(" ");
-       
+     jTextArea1.setText(" ");
+       destino.setText(""); 
         Boolean error = false;
         //String texto = "";
         //char[] letra;
@@ -820,6 +817,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 
                 
             destino.append("Frase en binario \n");
+             jLabel2.setText("Frase correcta");
             cadenabinario.add("00110001011011100011000101100011");
             for (char sali : textos)
             {
@@ -848,7 +846,7 @@ public class NewJFrame extends javax.swing.JFrame {
                             int charcode = Integer.parseInt(arreglo.get(i),2);
                             String str = new Character((char)charcode).toString();
                             destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n");
-                            
+                             jLabel2.setText("Error en la posicion"+i+"el caracter deve ser "+str+" " );
                             
                         }
                     }
@@ -865,14 +863,17 @@ public class NewJFrame extends javax.swing.JFrame {
                             contaerror++;
                             int charcode = Integer.parseInt(arreglo.get(i),2);
                             String str = new Character((char)charcode).toString();
-                            destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n");                                                        
+                            destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n"); 
+                            jLabel2.setText("Error en la posicion "+i+" el caracter deve ser "+str+" " );
                         }                                                
                     }
                     if(contaerror<1)
                     {
                         destino.append("FRASE CORRECTA, PERO MUY CORTA \n");
+                        jLabel2.setText("Frase correcta pero muy corta " );
                     }
                     destino.append("LE FALTARON "+(arreglo.size()-cadenabinario.size())+" CARACTERES \n");
+                        jLabel5.setText("Le Faltaron " +(arreglo.size()-cadenabinario.size())+" Caracteres ");
                 }
                 
                 else if(cadenabinario.size()>arreglo.size())
@@ -887,14 +888,17 @@ public class NewJFrame extends javax.swing.JFrame {
                             contaerror++;
                             int charcode = Integer.parseInt(arreglo.get(i),2);
                             String str = new Character((char)charcode).toString();
-                            destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n");                                                        
+                            destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n"); 
+                              jLabel2.setText("error en la posicion"+i+"El caracter deve ser"+str );
                         }                                                
                     }
                     if(contaerror<1)
                     {
                         destino.append("FRASE CORRECTA, PERO MUY LARGA \n");
+                          jLabel2.setText("Frase correcta pero muy larga " );
                     }
                     destino.append("TIENE "+(cadenabinario.size()-arreglo.size())+" CARACTERES ADICIONALES \n");
+                      jLabel5.setText("Tiene" +(cadenabinario.size()-arreglo.size())+" Caracteres de mas \n");
                 }
                 
                 if(error == false)
@@ -904,6 +908,7 @@ public class NewJFrame extends javax.swing.JFrame {
                         int charcode = Integer.parseInt(arreglo.get(i),2);
                         String str = new Character((char)charcode).toString();
                         jTextArea1.append(str);
+                   
                     }
                 }
                 
@@ -954,8 +959,12 @@ public class NewJFrame extends javax.swing.JFrame {
 		}
 		System.out.println();
                 int contador1=0;
-                    jLabel3.setText("el crc generado es  "+crc2+crc3 );
-                  jLabel4.setText("el crc generado es  "+crc2+crc3 );
+                  
+
+
+
+//  jLabel3.setText("el crc generado es  "+crc2+crc3 );
+                 
                 }
                 
                 
