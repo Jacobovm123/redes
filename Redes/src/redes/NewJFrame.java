@@ -5,6 +5,7 @@
  */
 package redes;
 
+import java.awt.Frame;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
@@ -14,6 +15,7 @@ import javax.swing.JOptionPane;
  */
 public class NewJFrame extends javax.swing.JFrame {
 
+    public String frase ="Redes de Computadoras ";
     /**
      * Creates new form NewJFrame
      */
@@ -39,16 +41,9 @@ public class NewJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         origen = new javax.swing.JTextArea();
@@ -64,28 +59,20 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel1.setText("jLabel1");
-
-        jLabel2.setText("jLabel2");
 
         jLabel3.setText("jLabel3");
 
         jLabel4.setText("jLabel4");
 
-        jLabel5.setText("jLabel5");
-
-        jLabel6.setText("jLabel6");
-
-        jLabel7.setText("jLabel7");
-
-        jLabel8.setText("jLabel8");
-
         jLabel9.setText("jLabel9");
-
-        jLabel10.setText("jLabel10");
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("Ingrese Texto");
@@ -134,110 +121,126 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("jLabel1");
+
+        jLabel2.setText("jLabel2");
+
+        jLabel5.setText("jLabel5");
+
+        jLabel6.setText("jLabel6");
+
+        jLabel7.setText("jLabel7");
+
+        jButton3.setText("Cambiar palabra");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addComponent(BtnTextBin)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(BtnTextBin)
+                    .addComponent(jButton3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 487, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(173, 173, 173))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(32, 32, 32)
                         .addComponent(jLabel13)
                         .addGap(122, 122, 122)
                         .addComponent(jLabel14)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(146, 146, 146)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8))
-                .addGap(72, 72, 72))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel9)
+                        .addGap(78, 902, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(365, 365, 365))
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel9))
                             .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jButton1)
-                                .addComponent(jButton2)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 224, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(91, 91, 91))
+                            .addComponent(jButton1))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel7))
+                .addGap(473, 473, 473))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel13)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(10, 10, 10)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel14))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(64, 64, 64)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel7))
-                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(22, 22, 22)
-                .addComponent(jLabel8)
-                .addGap(7, 7, 7)
-                .addComponent(jLabel10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
-                .addComponent(jButton2)
-                .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addGap(15, 15, 15)
-                .addComponent(jLabel12)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jLabel13)
+                                .addGap(18, 18, 18)
+                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel14)
+                                .addGap(24, 24, 24)
+                                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel9)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton1)
+                        .addGap(32, 32, 32)
                         .addComponent(jLabel11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(BtnTextBin, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(54, 54, 54)
-                        .addComponent(jLabel9)
-                        .addGap(22, 22, 22))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                        .addGap(10, 10, 10)
+                        .addComponent(jButton3)
+                        .addGap(0, 264, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabel2)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel5)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel6)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel7)
+                        .addGap(5, 5, 5)
+                        .addComponent(jLabel3)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel4)
+                        .addGap(35, 35, 35)
+                        .addComponent(jLabel12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane2)))
+                .addGap(7, 7, 7)
+                .addComponent(jLabel1))
         );
 
         pack();
@@ -486,39 +489,16 @@ public class NewJFrame extends javax.swing.JFrame {
             //FIN DE IF DE TAM==&
         if(tam <=21)
         {
-
-            for (int i = 0; i < texto.length(); i++)
-
-            {
-
-                //recorre el texto ingresado
-                char letra = texto.charAt(i);//separa letra a letra
-
-                int aux = Binario((int) (letra)).length();//almacena largo del binario d ela letra devuelta
-                for (int j = 0; j < 8; j++) {//recorrido de 8 characteres
-                    if (aux < 8) {//si el largo del binario es menor a 7 (0-7)entonces
-
-                        codigoBinario = codigoBinario + "0";//agregar 0 a la concadenacion
-                        aux++;
-                        //System.out.println("la posiscion s " +j );
-
-                    }
-
-                }
-
-                codigoBinario = codigoBinario + Binario ((int) (letra))+" = "+ letra +" " + " ; "  ;
-                //  jLabel4.setText("la frase es correcta ");
-                //codigoBinario = codigoBinario + "g" ;
-
-            }
-
+//es la que ingresa 
+ //ca           
+       
             jLabel9.setText("Error la frase es muy corta");
         }
 
         else if(tam >=23)
         {
-
-            for (int i = 0; i < texto.length(); i++)
+              
+           for (int i = 0; i < texto.length(); i++)
 
             {
 
@@ -540,10 +520,44 @@ public class NewJFrame extends javax.swing.JFrame {
                 codigoBinario = codigoBinario + Binario ((int) (letra))+" = "+ letra +" " + " ; "  ;
                 //  jLabel4.setText("la frase es correcta ");
                 //codigoBinario = codigoBinario + "g" ;
+                
 
+                
+                
             }
 
             jLabel9.setText(" error la frase es muy larga ");
+         
+         
+           if(contadorerror>=1)
+                    {
+                       
+                        
+                    
+                
+                
+                
+                String co="";
+                String fo="";
+                for (int x =0; x<texto.length(); x++)
+                {
+                    if(ERRORES[x] == '1')
+                    {
+                        fo=fo+x+",";
+                        co=co+palabrafrase[x]+",";
+                        // jLabel4.setText("Error en la posicion "+" "+x+" "+"La letra deveria ser "+" "+palabrafrase[x]);
+                        jLabel9.setText("la cadena es muy larga, Error en la posicion "+" "+fo+""+"Los caracteres de mas son: "+co);
+
+                       //System.out.println("ERROR EN LA POSICION "+x+" LA LETRA DEBERIA DE SER "+palabrafrase[x]);
+                    }
+                    //jLabel4.setText(conca);
+
+                }
+                            
+                } 
+
+            
+            
         }
 
      
@@ -551,12 +565,11 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnTextBinActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
-     String texto ="0";  
-      texto = origen.getText();
- 
-       
         
+     String texto = origen.getText();
+     destino.setText(" ");
+       
+        Boolean error = false;
         //String texto = "";
         //char[] letra;
         //  char [] letra = texto.toCharArray();
@@ -565,169 +578,127 @@ public class NewJFrame extends javax.swing.JFrame {
         // char letra;
         int contadorerror =0;
         int tam = texto.length();
-        
+        int divi[]=new int [5];
+                divi[0]=1;
+                 divi[1]=0;
+                  divi[2]=1;
+                   divi[3]=0;
+                    divi[4]=1;
 
       
            //if (texto.equals("Redes "))  {
-
+                char[] textos = texto.toCharArray();
                 char ERRORES[] = new char[80];
-                char palabrafrase[] = new char[80];
+                char[] palabrafrase = frase.toCharArray();
                 ArrayList<String> cadenabinario = new ArrayList<String>();
-                palabrafrase[0]='R';
-                palabrafrase[1]='e';
-                palabrafrase[2]='d';
-                palabrafrase[3]='e';
-                palabrafrase[4]='s';
-                palabrafrase[5]=' ';
-                palabrafrase[6]='d';
-                palabrafrase[7]='e';
-                palabrafrase[8]=' ';
-                palabrafrase[9]='C';
-                palabrafrase[10]='o';
-                palabrafrase[11]='m';
-                palabrafrase[12]='p';
-                palabrafrase[13]='u';
-                palabrafrase[14]='t';
-                palabrafrase[15]='a';
-                palabrafrase[16]='d';
-                palabrafrase[17]='o';
-                palabrafrase[18]='r';
-                palabrafrase[19]='a';
-                palabrafrase[20]='s';
-                palabrafrase[21]=' ';
+                ArrayList<String> arreglo = new ArrayList<String>();
                 
-                
-                
-                cadenabinario.add("00110001011011100011000101100011");
-                for (int i = 0; i < texto.length(); i++)
-
+                   arreglo.add("00110001011011100011000101100011");
+            for (char sali : palabrafrase)
+            {
+                if(String.valueOf(Integer.toBinaryString(sali)).length() == 7)
                 {
-                      
-                    //recorre el texto ingresado
-                    char letra = texto.charAt(i);//separa letra a letra
-
-                    if(letra==palabrafrase[i])
-                    {
-                        ERRORES[i]='0';
-                        
-                    }
-                    else
-                    {
-                        
-                        ERRORES[i]='1';
-                        contadorerror++;
-                        
-                        
-                    }
+                arreglo.add("0"+Integer.toBinaryString(sali));
+                }
+                else
+                {
+                arreglo.add("00"+Integer.toBinaryString(sali));
+                }
+            }
+            arreglo.add("01000110001100010110111001100001");
+                
+                
+            destino.append("Frase en binario \n");
+            cadenabinario.add("00110001011011100011000101100011");
+            for (char sali : textos)
+            {
+                if(String.valueOf(Integer.toBinaryString(sali)).length() == 7)
+                {
+                cadenabinario.add("0"+Integer.toBinaryString(sali));
+                destino.append("0"+Integer.toBinaryString(sali)+"\n");
+                }
+                else
+                {
+                cadenabinario.add("00"+Integer.toBinaryString(sali));
+                destino.append("00"+Integer.toBinaryString(sali)+"\n");
+                }                      
                     
-                    int aux = Binario((int) (letra)).length();//almacena largo del binario de la letra devuelta
-                    for (int j = 0; j < 8; j++) {//recorrido de 8 characteres
-                        if (aux < 8) {//si el largo del binario es menor a 7 (0-7)entonces
+            }                
+            cadenabinario.add("01000110001100010110111001100001");
+                
 
-                            codigoBinario = codigoBinario + "0";//agregar 0 a la concadenacion
-                            aux++;
-                            //System.out.println("la posiscion s " +j );
+                if(cadenabinario.size()==arreglo.size())
+                {
+                    for(int i=0; i<cadenabinario.size(); i++)
+                    {
+                        if(!cadenabinario.get(i).equals(arreglo.get(i)))
+                        {
+                            error=true;
+                            int charcode = Integer.parseInt(arreglo.get(i),2);
+                            String str = new Character((char)charcode).toString();
+                            destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n");
+                            
                             
                         }
-                        
-
                     }
-                    String bin = Binario((int)(letra));
-                    if(bin.length()==7)
-                    {cadenabinario.add("0"+ Binario((int) (letra)));}
-                    else if(bin.length()==6)
-                        {cadenabinario.add("00"+ Binario((int) (letra)));}
-                    else if(bin.length()==8)
-                    {cadenabinario.add(""+Binario((int)(letra)));}
-                    
-                    codigoBinario = codigoBinario + Binario ((int) (letra))+" = "+ letra +" " + " , "  ;
-                    
-                    
-              
-                
-                       
-               
-                  
-                    //codigoBinario = codigoBinario + "g" ;
                 }
-              
-                
-                if(contadorerror>=1)
-                    {
-                        jLabel9.setText("la frase es incorrecta ");
-                        
-                        
-                        
-                    
-                
-                
-                
-                String conca="";
-                String fori="";
-                for (int x =0; x<texto.length(); x++)
+                else if(cadenabinario.size()<arreglo.size())
                 {
-                    if(ERRORES[x] == '1')
-                    {
-                        fori=fori+x+",";
-                        conca=conca+palabrafrase[x]+",";
-                        // jLabel4.setText("Error en la posicion "+" "+x+" "+"La letra deveria ser "+" "+palabrafrase[x]);
-                        jLabel9.setText("Error en la posicion "+" "+fori+""+"La letra deveria ser "+""+conca+"");
-
-                        //System.out.println("ERROR EN LA POSICION "+x+" LA LETRA DEBERIA DE SER "+palabrafrase[x]);
-                    }
-                    //jLabel4.setText(conca);
-
-                }
-                            
-                }
-                
-                else if(contadorerror==0)
-                        
+                    int contaerror=0;
+                    error = true;
+                    for(int i=0; i<(cadenabinario.size()-1); i++)
                     {
                         
-                        
-                        jLabel9.setText("la frase es correcta ");
-                        jTextArea1.setText("");
-                        jTextArea2.setText(texto);
-                        
-                        
-                        
-                        
-                
+                        if(!cadenabinario.get(i).equals(arreglo.get(i)))
+                        {
+                            contaerror++;
+                            int charcode = Integer.parseInt(arreglo.get(i),2);
+                            String str = new Character((char)charcode).toString();
+                            destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n");                                                        
+                        }                                                
                     }
+                    if(contaerror<1)
+                    {
+                        destino.append("FRASE CORRECTA, PERO MUY CORTA \n");
+                    }
+                    destino.append("LE FALTARON "+(arreglo.size()-cadenabinario.size())+" CARACTERES \n");
+                }
                 
-                   cadenabinario.add("01000110001100010110111001100001");
+                else if(cadenabinario.size()>arreglo.size())
+                {
+                    int contaerror=0;
+                    error = true;
+                    for(int i=0; i<(arreglo.size()-1); i++)
+                    {
+                        
+                        if(!cadenabinario.get(i).equals(arreglo.get(i)))
+                        {
+                            contaerror++;
+                            int charcode = Integer.parseInt(arreglo.get(i),2);
+                            String str = new Character((char)charcode).toString();
+                            destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n");                                                        
+                        }                                                
+                    }
+                    if(contaerror<1)
+                    {
+                        destino.append("FRASE CORRECTA, PERO MUY LARGA \n");
+                    }
+                    destino.append("TIENE "+(cadenabinario.size()-arreglo.size())+" CARACTERES ADICIONALES \n");
+                }
                 
-                
-                
+                if(error == false)
+                {
+                    for(int i=1; i<arreglo.size()-1; i++)
+                    {
+                        int charcode = Integer.parseInt(arreglo.get(i),2);
+                        String str = new Character((char)charcode).toString();
+                        jTextArea2.append(str);
+                    }
+                }
                 
                            int n;
 		
-		ArrayList<String> arreglo = new ArrayList<String>();
-                arreglo.add("1010010");
-                arreglo.add("1100101");
-                arreglo.add("1100100");
-                arreglo.add("1100101");
-                arreglo.add("1110011");
-                arreglo.add("0100000");
-                arreglo.add("01100100");
-                arreglo.add("01100101");
-                arreglo.add("0100000");
-                arreglo.add("01000011");
-                arreglo.add("01101111");
-                arreglo.add("01101101");
-                arreglo.add("01110000");
-                arreglo.add("01110101");
-                arreglo.add("01110100");
-                arreglo.add("01100001");
-                arreglo.add("01100100");
-                arreglo.add("01101111");                      
-                arreglo.add("01110010");
-                arreglo.add("01100001");
-                arreglo.add("01110011");
-                                                    
-                                                    
-                
+		                                                                                                                       
                 for(int j=0; j<arreglo.size(); j++)
                 {
                int  ta = arreglo.get(j).length();
@@ -741,12 +712,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 }
                 
                 
-                  int divi[]=new int [5];
-                divi[0]=1;
-                 divi[1]=0;
-                  divi[2]=1;
-                   divi[3]=0;
-                    divi[4]=1;
+                  
                     
                     
                    
@@ -757,9 +723,9 @@ public class NewJFrame extends javax.swing.JFrame {
 		// Store the remainder that is returned by the method
 		int remainder[] = divide(datas, divi);
 		for(int i=0 ; i < remainder.length-1 ; i++) {
-			System.out.print(remainder[i]);
+			//destino.append(""+remainder[i]);
 		}
-		System.out.println("\n el CRC generado es :");
+		
                 //jLabel4.setText("el crc generado es  ");
 		String crc2="";
 		for(int i=0 ; i < datas.length ; i++) {
@@ -771,7 +737,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String crc3="";
 		for(int i=0 ; i < remainder.length-1 ; i++) {
                     crc3=crc3+remainder[i];
-			System.out.print(remainder[i]);
+			//destino.append("\n"+remainder[i]);
                          // jLabel6.setText(" "+crc3);
                         // jLabel4.setText("Error en la posicion "+" "+x+" "+"La letra deveria ser "+" "+palabrafrase[x]);
 		}
@@ -782,14 +748,14 @@ public class NewJFrame extends javax.swing.JFrame {
                 }
                 
   
-                           destino.setText(codigoBinario);/*imprime el codigo binario completo*/
+/*                           destino.setText(codigoBinario);/*imprime el codigo binario completo
         destino.append("\n Cadena completa: ");
         for(int x=0; x<cadenabinario.size();x++)
                 {
                     destino.append("\n"+cadenabinario.get(x));
                 }    
      
-                  
+*/               
                     
                 
             
@@ -799,81 +765,22 @@ public class NewJFrame extends javax.swing.JFrame {
             
                 //}  //  FIN DE IF COMPROBACION
             //FIN DE IF DE TAM==&
-        if(tam <=21)
-        {
-
-            for (int i = 0; i < texto.length(); i++)
-
-            {
-
-                //recorre el texto ingresado
-                char letra = texto.charAt(i);//separa letra a letra
-
-                int aux = Binario((int) (letra)).length();//almacena largo del binario d ela letra devuelta
-                for (int j = 0; j < 8; j++) {//recorrido de 8 characteres
-                    if (aux < 8) {//si el largo del binario es menor a 7 (0-7)entonces
-
-                        codigoBinario = codigoBinario + "0";//agregar 0 a la concadenacion
-                        aux++;
-                        //System.out.println("la posiscion s " +j );
-
-                    }
-
-                }
-
-                codigoBinario = codigoBinario + Binario ((int) (letra))+" = "+ letra +" " + " ; "  ;
-                //  jLabel4.setText("la frase es correcta ");
-                //codigoBinario = codigoBinario + "g" ;
-
-            }
-
-            jLabel9.setText("Error la frase es muy corta");
-        }
-
-        else if(tam >=23)
-        {
-
-            for (int i = 0; i < texto.length(); i++)
-
-            {
-
-                //recorre el texto ingresado
-                char letra = texto.charAt(i);//separa letra a letra
-
-                int aux = Binario((int) (letra)).length();//almacena largo del binario d ela letra devuelta
-                for (int j = 0; j < 8; j++) {//recorrido de 8 characteres
-                    if (aux < 8) {//si el largo del binario es menor a 7 (0-7)entonces
-
-                        codigoBinario = codigoBinario + "0";//agregar 0 a la concadenacion
-                        aux++;
-                        //System.out.println("la posiscion s " +j );
-
-                    }
-
-                }
-
-                codigoBinario = codigoBinario + Binario ((int) (letra))+" = "+ letra +" " + " ; "  ;
-                //  jLabel4.setText("la frase es correcta ");
-                //codigoBinario = codigoBinario + "g" ;
-
-            }
-
-            jLabel9.setText(" error la frase es muy larga ");
-        }
+        
 
      
 
 
 
         // TODO add your handling code here:
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
      String texto = origen.getText();
- 
+     destino.setText(" ");
        
-        
+        Boolean error = false;
         //String texto = "";
         //char[] letra;
         //  char [] letra = texto.toCharArray();
@@ -882,166 +789,127 @@ public class NewJFrame extends javax.swing.JFrame {
         // char letra;
         int contadorerror =0;
         int tam = texto.length();
-        
+        int divi[]=new int [5];
+                divi[0]=1;
+                 divi[1]=0;
+                  divi[2]=1;
+                   divi[3]=0;
+                    divi[4]=1;
 
       
            //if (texto.equals("Redes "))  {
-
+                char[] textos = texto.toCharArray();
                 char ERRORES[] = new char[80];
-                char palabrafrase[] = new char[80];
+                char[] palabrafrase = frase.toCharArray();
                 ArrayList<String> cadenabinario = new ArrayList<String>();
-                palabrafrase[0]='R';
-                palabrafrase[1]='e';
-                palabrafrase[2]='d';
-                palabrafrase[3]='e';
-                palabrafrase[4]='s';
-                palabrafrase[5]=' ';
-                palabrafrase[6]='d';
-                palabrafrase[7]='e';
-                palabrafrase[8]=' ';
-                palabrafrase[9]='C';
-                palabrafrase[10]='o';
-                palabrafrase[11]='m';
-                palabrafrase[12]='p';
-                palabrafrase[13]='u';
-                palabrafrase[14]='t';
-                palabrafrase[15]='a';
-                palabrafrase[16]='d';
-                palabrafrase[17]='o';
-                palabrafrase[18]='r';
-                palabrafrase[19]='a';
-                palabrafrase[20]='s';
-                palabrafrase[21]=' ';
+                ArrayList<String> arreglo = new ArrayList<String>();
                 
-                
-                
-                cadenabinario.add("00110001011011100011000101100011");
-                for (int i = 0; i < texto.length(); i++)
-
+                   arreglo.add("00110001011011100011000101100011");
+            for (char sali : palabrafrase)
+            {
+                if(String.valueOf(Integer.toBinaryString(sali)).length() == 7)
                 {
-                      
-                    //recorre el texto ingresado
-                    char letra = texto.charAt(i);//separa letra a letra
-
-                    if(letra==palabrafrase[i])
-                    {
-                        ERRORES[i]='0';
-                        
-                    }
-                    else
-                    {
-                        
-                        ERRORES[i]='1';
-                        contadorerror++;
-                        
-                        
-                    }
+                arreglo.add("0"+Integer.toBinaryString(sali));
+                }
+                else
+                {
+                arreglo.add("00"+Integer.toBinaryString(sali));
+                }
+            }
+            arreglo.add("01000110001100010110111001100001");
+                
+                
+            destino.append("Frase en binario \n");
+            cadenabinario.add("00110001011011100011000101100011");
+            for (char sali : textos)
+            {
+                if(String.valueOf(Integer.toBinaryString(sali)).length() == 7)
+                {
+                cadenabinario.add("0"+Integer.toBinaryString(sali));
+                destino.append("0"+Integer.toBinaryString(sali)+"\n");
+                }
+                else
+                {
+                cadenabinario.add("00"+Integer.toBinaryString(sali));
+                destino.append("00"+Integer.toBinaryString(sali)+"\n");
+                }                      
                     
-                    int aux = Binario((int) (letra)).length();//almacena largo del binario de la letra devuelta
-                    for (int j = 0; j < 8; j++) {//recorrido de 8 characteres
-                        if (aux < 8) {//si el largo del binario es menor a 7 (0-7)entonces
+            }                
+            cadenabinario.add("01000110001100010110111001100001");
+                
 
-                            codigoBinario = codigoBinario + "0";//agregar 0 a la concadenacion
-                            aux++;
-                            //System.out.println("la posiscion s " +j );
+                if(cadenabinario.size()==arreglo.size())
+                {
+                    for(int i=0; i<cadenabinario.size(); i++)
+                    {
+                        if(!cadenabinario.get(i).equals(arreglo.get(i)))
+                        {
+                            error=true;
+                            int charcode = Integer.parseInt(arreglo.get(i),2);
+                            String str = new Character((char)charcode).toString();
+                            destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n");
+                            
                             
                         }
-                        
-
                     }
-                    String bin = Binario((int)(letra));
-                    if(bin.length()==7)
-                    {cadenabinario.add("0"+ Binario((int) (letra)));}
-                    else if(bin.length()==6)
-                        {cadenabinario.add("00"+ Binario((int) (letra)));}
-                    else if(bin.length()==8)
-                    {cadenabinario.add(""+Binario((int)(letra)));}
-                    
-                    codigoBinario = codigoBinario + Binario ((int) (letra))+" = "+ letra +" " + " , "  ;
-                    
-                    
-              
-                
-                       
-               
-                  
-                    //codigoBinario = codigoBinario + "g" ;
                 }
-                
-                if(contadorerror>=1)
-                    {
-                        jLabel9.setText("la frase es incorrecta ");
-                        
-                        
-                        
-                    
-                
-                
-                
-                String conca="";
-                String fori="";
-                for (int x =0; x<texto.length(); x++)
+                else if(cadenabinario.size()<arreglo.size())
                 {
-                    if(ERRORES[x] == '1')
-                    {
-                        fori=fori+x+",";
-                        conca=conca+palabrafrase[x]+",";
-                        // jLabel4.setText("Error en la posicion "+" "+x+" "+"La letra deveria ser "+" "+palabrafrase[x]);
-                        jLabel9.setText("Error en la posicion "+" "+fori+""+"La letra deveria ser "+""+conca+"");
-
-                        //System.out.println("ERROR EN LA POSICION "+x+" LA LETRA DEBERIA DE SER "+palabrafrase[x]);
-                    }
-                    //jLabel4.setText(conca);
-
-                }
-                            
-                }
-                else if(contadorerror==0)
-                        
+                    int contaerror=0;
+                    error = true;
+                    for(int i=0; i<(cadenabinario.size()-1); i++)
                     {
                         
-                        
-                        jLabel9.setText("la frase es correcta ");
-                        jTextArea1.setText(texto);
-                        jTextArea2.setText("");
-                        
-                        
-                        
-                
+                        if(!cadenabinario.get(i).equals(arreglo.get(i)))
+                        {
+                            contaerror++;
+                            int charcode = Integer.parseInt(arreglo.get(i),2);
+                            String str = new Character((char)charcode).toString();
+                            destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n");                                                        
+                        }                                                
                     }
-              
-                   cadenabinario.add("01000110001100010110111001100001");
+                    if(contaerror<1)
+                    {
+                        destino.append("FRASE CORRECTA, PERO MUY CORTA \n");
+                    }
+                    destino.append("LE FALTARON "+(arreglo.size()-cadenabinario.size())+" CARACTERES \n");
+                }
                 
+                else if(cadenabinario.size()>arreglo.size())
+                {
+                    int contaerror=0;
+                    error = true;
+                    for(int i=0; i<(arreglo.size()-1); i++)
+                    {
+                        
+                        if(!cadenabinario.get(i).equals(arreglo.get(i)))
+                        {
+                            contaerror++;
+                            int charcode = Integer.parseInt(arreglo.get(i),2);
+                            String str = new Character((char)charcode).toString();
+                            destino.append("ERROR en posicion "+i+" Debe ser "+str+"\n");                                                        
+                        }                                                
+                    }
+                    if(contaerror<1)
+                    {
+                        destino.append("FRASE CORRECTA, PERO MUY LARGA \n");
+                    }
+                    destino.append("TIENE "+(cadenabinario.size()-arreglo.size())+" CARACTERES ADICIONALES \n");
+                }
                 
-                
+                if(error == false)
+                {
+                    for(int i=1; i<arreglo.size()-1; i++)
+                    {
+                        int charcode = Integer.parseInt(arreglo.get(i),2);
+                        String str = new Character((char)charcode).toString();
+                        jTextArea1.append(str);
+                    }
+                }
                 
                            int n;
 		
-		ArrayList<String> arreglo = new ArrayList<String>();
-                arreglo.add("1010010");
-                arreglo.add("1100101");
-                arreglo.add("1100100");
-                arreglo.add("1100101");
-                arreglo.add("1110011");
-                arreglo.add("0100000");
-                arreglo.add("01100100");
-                arreglo.add("01100101");
-                arreglo.add("0100000");
-                arreglo.add("01000011");
-                arreglo.add("01101111");
-                arreglo.add("01101101");
-                arreglo.add("01110000");
-                arreglo.add("01110101");
-                arreglo.add("01110100");
-                arreglo.add("01100001");
-                arreglo.add("01100100");
-                arreglo.add("01101111");                      
-                arreglo.add("01110010");
-                arreglo.add("01100001");
-                arreglo.add("01110011");
-                                                    
-                                                    
-                
+		                                                                                                                       
                 for(int j=0; j<arreglo.size(); j++)
                 {
                int  ta = arreglo.get(j).length();
@@ -1055,12 +923,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 }
                 
                 
-                  int divi[]=new int [5];
-                divi[0]=1;
-                 divi[1]=0;
-                  divi[2]=1;
-                   divi[3]=0;
-                    divi[4]=1;
+                  
                     
                     
                    
@@ -1071,9 +934,9 @@ public class NewJFrame extends javax.swing.JFrame {
 		// Store the remainder that is returned by the method
 		int remainder[] = divide(datas, divi);
 		for(int i=0 ; i < remainder.length-1 ; i++) {
-			System.out.print(remainder[i]);
+			//destino.append(""+remainder[i]);
 		}
-		System.out.println("\n el CRC generado es :");
+		
                 //jLabel4.setText("el crc generado es  ");
 		String crc2="";
 		for(int i=0 ; i < datas.length ; i++) {
@@ -1085,7 +948,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String crc3="";
 		for(int i=0 ; i < remainder.length-1 ; i++) {
                     crc3=crc3+remainder[i];
-			System.out.print(remainder[i]);
+			//destino.append("\n"+remainder[i]);
                          // jLabel6.setText(" "+crc3);
                         // jLabel4.setText("Error en la posicion "+" "+x+" "+"La letra deveria ser "+" "+palabrafrase[x]);
 		}
@@ -1095,15 +958,16 @@ public class NewJFrame extends javax.swing.JFrame {
                   jLabel4.setText("el crc generado es  "+crc2+crc3 );
                 }
                 
+                
   
-                           destino.setText(codigoBinario);/*imprime el codigo binario completo*/
+/*                           destino.setText(codigoBinario);/*imprime el codigo binario completo
         destino.append("\n Cadena completa: ");
         for(int x=0; x<cadenabinario.size();x++)
                 {
                     destino.append("\n"+cadenabinario.get(x));
                 }    
      
-                  
+*/               
                     
                 
             
@@ -1113,67 +977,7 @@ public class NewJFrame extends javax.swing.JFrame {
             
                 //}  //  FIN DE IF COMPROBACION
             //FIN DE IF DE TAM==&
-        if(tam <=21)
-        {
-
-            for (int i = 0; i < texto.length(); i++)
-
-            {
-
-                //recorre el texto ingresado
-                char letra = texto.charAt(i);//separa letra a letra
-
-                int aux = Binario((int) (letra)).length();//almacena largo del binario d ela letra devuelta
-                for (int j = 0; j < 8; j++) {//recorrido de 8 characteres
-                    if (aux < 8) {//si el largo del binario es menor a 7 (0-7)entonces
-
-                        codigoBinario = codigoBinario + "0";//agregar 0 a la concadenacion
-                        aux++;
-                        //System.out.println("la posiscion s " +j );
-
-                    }
-
-                }
-
-                codigoBinario = codigoBinario + Binario ((int) (letra))+" = "+ letra +" " + " ; "  ;
-                //  jLabel4.setText("la frase es correcta ");
-                //codigoBinario = codigoBinario + "g" ;
-
-            }
-
-            jLabel9.setText("Error la frase es muy corta");
-        }
-
-        else if(tam >=23)
-        {
-
-            for (int i = 0; i < texto.length(); i++)
-
-            {
-
-                //recorre el texto ingresado
-                char letra = texto.charAt(i);//separa letra a letra
-
-                int aux = Binario((int) (letra)).length();//almacena largo del binario d ela letra devuelta
-                for (int j = 0; j < 8; j++) {//recorrido de 8 characteres
-                    if (aux < 8) {//si el largo del binario es menor a 7 (0-7)entonces
-
-                        codigoBinario = codigoBinario + "0";//agregar 0 a la concadenacion
-                        aux++;
-                        //System.out.println("la posiscion s " +j );
-
-                    }
-
-                }
-
-                codigoBinario = codigoBinario + Binario ((int) (letra))+" = "+ letra +" " + " ; "  ;
-                //  jLabel4.setText("la frase es correcta ");
-                //codigoBinario = codigoBinario + "g" ;
-
-            }
-
-            jLabel9.setText(" error la frase es muy larga ");
-        }
+        
 
      
 
@@ -1181,12 +985,22 @@ public class NewJFrame extends javax.swing.JFrame {
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+   String Mensaje = origen.getText();  
+   frase = Mensaje;
+   
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
     
     
     
     
     
-       static int[] divide(int old_data[], int divisor[]) {
+       public int[] divide(int old_data[], int divisor[]) {
 		int remainder[] , i;
 		int data[] = new int[old_data.length + divisor.length];
 		System.arraycopy(old_data, 0, data, 0, old_data.length);
@@ -1199,21 +1013,21 @@ public class NewJFrame extends javax.swing.JFrame {
 		// This loop will continuously exor the bits of the remainder and
 		// divisor
 		for(i=0 ; i < old_data.length ; i++) {
-			System.out.println((i+1) + ".) El primer bit de datos es : "
-								+ remainder[0]);
-			System.out.print("Sobrante : ");
+			destino.append((i+1) + ".) bit de datos es : "
+								+ remainder[0]+"\n");
+			destino.append("Sobrante : ");
 			if(remainder[0] == 1) {
 				// We have to exor the remainder bits with divisor bits
 				for(int j=1 ; j < divisor.length ; j++) {
 					remainder[j-1] = exor(remainder[j], divisor[j]);
-					System.out.print(remainder[j-1]);
+					destino.append(remainder[j-1]+"\n");
 				}
 			}
 			else {
 				// We have to exor the remainder bits with 0
 				for(int j=1 ; j < divisor.length ; j++) {
 					remainder[j-1] = exor(remainder[j], 0);
-					System.out.print(remainder[j-1]);
+					destino.append(remainder[j-1]+"\n");
 				}
 			}
 			// The last bit of the remainder will be taken from the data
@@ -1222,6 +1036,15 @@ public class NewJFrame extends javax.swing.JFrame {
 			remainder[divisor.length-1] = data[i+divisor.length];
 			System.out.println(remainder[divisor.length-1]);
 		}
+                for(i=0 ; i < old_data.length ; i++)
+                {
+                    destino.append(""+old_data[i]);
+                }
+                for(i=0 ; i < remainder.length ; i++)
+                {
+                    destino.append(""+remainder[i]);
+                }
+                destino.append("\n");
 		return remainder;
 	}
 	
@@ -1234,7 +1057,7 @@ public class NewJFrame extends javax.swing.JFrame {
 	}
     
     
-    
+    /*
     
       static int[] divide(int dividendo[],int largo_p[], int resto[])
      {
@@ -1255,7 +1078,7 @@ public class NewJFrame extends javax.swing.JFrame {
      
         
     }
-    
+    */
     
     
     
@@ -1325,8 +1148,8 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JTextArea destino;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -1337,7 +1160,6 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
